@@ -35,7 +35,7 @@
 	
 	<center><p><input type="submit" value="отправить" class="btn" name="send"></p></center>
 	
-	</form>
+	
 	<hr>
 	<center><small>все ваши данные нужны исключительно для анализа нашего покупателя и не распростроняються третьим лицам</small></center>
 	
