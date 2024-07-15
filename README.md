@@ -29,7 +29,7 @@
 	
 	<p><input type="text" name="Сколько лет: " placeholder="Сколько вам лет" maxlength="3"></p>
 	
-	<p><input type="textarea" name="email: "placeholder="Ваш email"></p>
+	<input type="textarea" name="emeil: " placeholder="ваш email"><p>
 	
 	<textarea name="идеи и предложения:" placeholder="напишите сюда ваши идеи и пожелания"></textarea> 
 	
