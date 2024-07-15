@@ -29,9 +29,9 @@
 	
 	<p><input type="text" name="Сколько лет: " placeholder="Сколько вам лет" maxlength="3"></p>
 	
-	<input type="textarea" name="emeil: " placeholder="ваш email"><p>
+	<p><input type="textarea" name="emeil: " placeholder="ваш email"></p>
 	
-	<textarea name="идеи и предложения:" placeholder="напишите сюда ваши идеи и пожелания"></textarea> 
+	<p><textarea name="идеи и предложения:" placeholder="напишите сюда ваши идеи и пожелания"></textarea> 
 	
 	<center><p><input type="submit" value="отправить" class="btn" name="send"></p></center>
 	
