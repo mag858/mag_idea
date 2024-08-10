@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 	<head>
 	<title>MAG industries</title>
@@ -7,9 +7,9 @@
 	<meta name="Keyboards" content="sait, MAG industries, interesting, tehnology, content, startup, 3d printer, arduino, code, knowledge, machine, auto, car, idea, good idea, future, MAG, impossible">	
 	</head>
 	
-<body style=background-color:#CCE1FE>
+<body style="background-color:#CCE1FE">
     
-    <p><b><a href="file:///Users/mihail/Desktop/MAG%20industries.html">вернуться на главную</a>&emsp;</a></b></p>
+    <p><b><a href="file:///Users/mihail/Desktop/MAG%20industries.html">вернуться на главную</a>&emsp;</b></p>
     
    <p><center><img src="sait/logo_2.jpeg" height ="400" width = "350"></center></p>
     
@@ -27,7 +27,7 @@
 	
 	<p><input type="text" name="Сколько лет: " placeholder="Сколько вам лет" maxlength="3"></p>
 	
-	<p><input type="email " name="email: "placeholder="Ваш email"></p>
+	<p><input type="text" name="email: " placeholder="Ваш email"></p>
 	
 	<textarea name="идеи и предложения:" placeholder="напишите сюда ваши идеи и пожелания"></textarea> 
 	
