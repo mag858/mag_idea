@@ -33,7 +33,6 @@
             animation: fadeIn 1.5s ease-out;
         }
         
-        /* Кнопка назад — левый верхний угол */
         .back-btn {
             position: fixed;
             top: 15px;
@@ -120,6 +119,8 @@
         }
         
         input[type="text"],
+        input[type="email"],
+        input[type="number"],
         textarea {
             width: 100%;
             padding: 14px 16px;
@@ -134,6 +135,8 @@
         }
         
         input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="number"]:focus,
         textarea:focus {
             border-color: var(--primary);
             outline: none;
@@ -146,7 +149,6 @@
             resize: vertical;
         }
         
-        /* Задержки анимации для полей */
         input:nth-of-type(1) { animation-delay: 0.2s; }
         input:nth-of-type(2) { animation-delay: 0.4s; }
         input:nth-of-type(3) { animation-delay: 0.6s; }
@@ -191,26 +193,16 @@
             margin-top: 80px;
         }
         
-        /* Анимации */
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         @keyframes slideUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
         @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
         
-        /* Мобильная адаптация */
         @media (max-width: 768px) {
-            .back-btn {
-                top: 10px;
-                left: 10px;
-                padding: 8px 14px;
-                font-size: 0.9rem;
-            }
+            .back-btn { top: 10px; left: 10px; padding: 8px 14px; font-size: 0.9rem; }
             .hero { padding-top: 70px; }
             h1 { font-size: 2.4rem; }
             .subtitle { font-size: 1.4rem; }
-            .ideas-section {
-                margin: 40px 20px;
-                padding: 30px;
-            }
+            .ideas-section { margin: 40px 20px; padding: 30px; }
             .ideas-section h3 { font-size: 2rem; }
             input[type="submit"] { width: 100%; max-width: 300px; }
             .logo { max-width: 280px; }
@@ -229,14 +221,17 @@
 
     <section class="ideas-section">
         <h3>Ваши идеи</h3>
-        <p>Здесь вы можете предлагать свои идеи по разработке часов или других устройств. Мы будем рады увидеть любые ваши идеи и предложения — даже если они кажутся сложными или невозможными.</p>
+        <p>Здесь вы можете предлагать свои идеи по разработке авто или других устройств, которые связаны с авто (или не связаны). Мы будем рады увидеть любые ваши идеи и предложения — даже если они кажутся чересчур сложными или невозможными.</p>
         
         <form action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="cabd165b-582a-434a-8aec-d05523b4c7f7">
             
             <input type="text" name="имя" placeholder="Ваше Имя" required>
-            <input type="text" name="возраст" placeholder="Сколько вам лет" maxlength="3">
-            <input type="text" name="email" placeholder="Ваш email" type="email">
+            
+            <input type="number" name="возраст" placeholder="Сколько вам лет" min="1" max="120">
+            
+            <input type="email" name="email" placeholder="Ваш email" required>
+            
             <textarea name="идеи и предложения" placeholder="Напишите сюда ваши идеи и пожелания..." required></textarea>
             
             <input type="submit" value="Отправить">
